@@ -20,10 +20,16 @@ class SelectionContainerDisabledExampleApp extends StatelessWidget {
           child: SelectionArea(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text('Selectable text'),
-                SelectionContainer.disabled(child: Text('Non-selectable text')),
-                Text('Selectable text'),
+              children: [
+                ElevatedButton(
+                          onPressed: () {
+                             setState(() {
+
+                          },
+                            child: SelectionContainer.disabled(
+                            child: Text("My button"),
+                               ),
+                            )
               ],
             ),
           ),
